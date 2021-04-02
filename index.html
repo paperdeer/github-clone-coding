@@ -8,23 +8,32 @@
     <link href="ghb.css" rel="stylesheet">
 </head>
 <body>
-    <div id="menu">
-        <div>
-            <a href="https://github.com/"><img id = "logo" src="git.jpg"></a>
+    
+    <header class="head">
+        <a href="https://github.com/"><img src="git.jpg" class="gitimg"></a>
+        <div class="menu">
+            <div class="search">
+                <input class="searchbox" type="text" size="27px" placeholder="  Search or jump to...">
+                <div class="searchbtn"><p>/</p></div>
+            </div>
+            <ul id="click">
+                <li><a class="menua"href="https://github.com/pulls">Pull request</a></li>
+                <li><a class="menua" href="https://github.com/issues">Issues</a></li>
+                <li><a class="menua" href="https://github.com/marketplace">Marketplace</a></li>
+                <li><a class="menua" href="https://github.com/explore">Explore</a></li>
+            </ul>
+            <div class="alam">
+                <img class="alammarginal" src="alam.jpg">
+                <img class="alammarginpl" src="plus.jpg">
+                <div class="alamuser"><img class="sui-" src="https://avatars.githubusercontent.com/u/75576448?s=60&v=4">
+                <img class="alammarginmo" src="moresee.jpg">
+                </div>
+            </div>
         </div>
-        <div id="search">
-            <input class="searchbox" type="text" size="33px" placeholder="  Search or jump to...">
-            <div class="searchbtn"><h5 class="searchbtnfont">/</h5></div>
-        </div>
-        <ul id="click">
-            <li><a href="https://github.com/pulls">Pull request</a></li>
-            <li><a href="https://github.com/issues">Issues</a></li>
-            <li><a href="https://github.com/marketplace">Marketplace</a></li>
-            <li><a href="https://github.com/explore">Explore</a></li>
-        </ul>
-    </div>
+    </header>
     <div id="under">
         <!-- <img id = "side" src="side.jpg"> -->
+        <!--
         <div class="side">
             <div class="sideuser">
                 <img class = "sui" src="https://avatars.githubusercontent.com/u/75576448?s=60&v=4"><h4>paperdeer</h4>
@@ -61,15 +70,43 @@
                 </div>
             </div>
         </div>
+        -->
+        <div class="side">
+            <div class="sideinfo">
+                <div><img class="sui"src="https://avatars.githubusercontent.com/u/75576448?s=60&v=4"></div>
+                <div class="sideusername">paperdeer</div>
+            </div>
+            <div class="repobox">
+                <div class="repo">
+                    <div class="repositories">Repositories</div>
+                    <div class="new"><div class="newimg"><img class="imgnew"src="newimg.jpg"></div><a class="newa"href="https://github.com/new">New<br></a></div>
+                </div>
+                <div>
+                    <input type="text" class="repoinput" placeholder="Find a repository...">
+                </div>
+                <nav class="linkrepobox">
+                    <div class="linkrepo"><div class="repoimg"><img src="gitrepo.jpg"></div><a class="linkfont"href="https://github.com/paperdeer/web">paperdeer/web</a></div>
+                    <div class="linkrepo"><div class="repoimg"><img src="gitrepo.jpg"></div><a class="linkfont" href="https://github.com/paperdeer/hello-world">paperdeer/hello-world</a></div>
+                    <div class="linkrepo"><div class="repoimg"><img src="gitrepo.jpg"></div><a class="linkfont" href="https://github.com/paperdeer/js-playground">paperdeer/js-playground</a></div>
+                    <div class="linkrepo"><div class="repoimg"><img src="gitrepo.jpg"></div><a class="linkfont" href="https://github.com/paperdeer/github-clone-coding">paperdeer/github-clone-coding</a></div>
+                    <div class="linkrepo"><div class="repoimg"><img src="gitrepo.jpg"></div><a class="linkfont" href="https://github.com/paperdeer/Make_Ryan">paperdeer/Make_Ryan</a></div>
+                    <div class="linkrepo"><div class="repoimg"><img src="gitrepo.jpg"></div><a class="linkfont" href="https://github.com/paperdeer/web1">paperdeer/web1</a></div>
+                    <div class="yourteamsbox">
+                        <div class="yourteams"><p class="yourteamp">Your teams</p></div>
+                        <div class="youdont"><p class="notice">You don’t belong to any teams yet!</p></div>
+                    </div>  
+                </nav>
+            </div>
+        </div>
         <div id="upload">
             <div class="eachbox">
                 <div id="postinfo">
                     <div class="boxtitle"><a href="https://github.com/eungyeole"><img id = "user" src="https://avatars.githubusercontent.com/u/66717787?s=64&v=4    "></a>
-                        <h2><a class="nickname" href="https://github.com/eungyeole"> eungyeole</a> starred <a class="nickname" href="https://github.com/smoothbear/DSM-Auth-Gradle-Library">smoothbear/DSM-Auth-Gradle-Library</a> <h3 class="dayinfo">15 hours ago</h3></h2></div>
+                        <p class="postp"><a class="nickname" href="https://github.com/eungyeole">&nbsp;eungyeole </a></p><p class="postthin">&nbsp;starred</p><a class="nickname" href="https://github.com/smoothbear/DSM-Auth-Gradle-Library"><p class="postp">&nbsp;smoothbear/DSM-Auth-Gradle-Library</p></a> <h3 class="dayinfo">15 hours ago</h3></p></div>
                         <div id="content">
                             <div id="box">
                                 <div id="title">smoothbear/DSM-Auth-Gradle-Library
-                                    <button id="starbtn">star</button></div>
+                                    <button id="starbtn" class="starbtn"><img class="starbtnimg" src="starbtn.jpg"><p class="staronoff">star</p></button></div>
                                 <div class="sinfo"><h3><a class = "sinfolink"href="https://github.com/smoothbear/DSM-Auth-Gradle-Library">DSM-Auth Gradle library</a></h3></div>
                                 <div class="bottom">
                                     <div class="type">
@@ -77,7 +114,7 @@
                                         java
                                     </div>
                                     <div class="star">
-                                        <img class = "starimg" src="별.jpg">
+                                        <img class = "starimg" src="star.jpg">
                                         <div class="number"></div>
                                         2
                                     </div>
@@ -90,8 +127,81 @@
                             </div>
                         </div>
                     </div>
+            </div>
+          
+        </div>
+        
+        <div>
+            <div class="rightinfo">`
+                <p class="righttitle">Explore repositories</p>
+                <div class="rightrepo">
+                    <p class="rightlink"><a class="nickname" href="https://github.com/jojoldu/freelec-springboot2-webservice">
+                    Pewww/pr-tree-viewer</p></a>
+                    <p class="rightboxinfo">Viewer of Github files-changed</p>
+                    <div class="rightbottom">
+                        <div class="type">
+                            <div class="type_icon"></div>
+                            java
+                        </div>
+                        <div class="star">
+                            <img class = "starimg" src="star.jpg">
+                            <div class="number"></div>
+                            2
+                        </div>
+                    </div>
                 </div>
+                <div class="rightrepo">
+                    <p class="rightlink"><a class="nickname" href="https://github.com/jojoldu/freelec-springboot2-webservice">
+                    Pewww/pr-tree-viewer</p></a>
+                    <p class="rightboxinfo">Viewer of Github files-changed</p>
+                    <div class="rightbottom">
+                        <div class="type">
+                            <div class="type_icon"></div>
+                            java
+                        </div>
+                        <div class="star">
+                            <img class = "starimg" src="star.jpg">
+                            <div class="number"></div>
+                            2
+                        </div>
+                    </div>
+                </div>
+                <div class="rightrepo">
+                    <p class="rightlink"><a class="nickname" href="https://github.com/jojoldu/freelec-springboot2-webservice">
+                    Pewww/pr-tree-viewer</p></a>
+                    <p class="rightboxinfo">Viewer of Github files-changed</p>
+                    <div class="rightbottom">
+                        <div class="type">
+                            <div class="type_icon"></div>
+                            java
+                        </div>
+                        <div class="star">
+                            <img class = "starimg" src="star.jpg">
+                            <div class="number"></div>
+                            2
+                        </div>
+                    </div>
+                </div>
+                <div class="rightrepo">
+                    <p class="rightlink"><a class="nickname" href="https://github.com/jojoldu/freelec-springboot2-webservice">
+                    Pewww/pr-tree-viewer</p></a>
+                    <p class="rightboxinfo">Viewer of Github files-changed</p>
+                    <div class="rightbottom">
+                        <div class="type">
+                            <div class="type_icon"></div>
+                            java
+                        </div>
+                        <div class="star">
+                            <img class = "starimg" src="star.jpg">
+                            <div class="number"></div>
+                            2
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
+    <script src="ghb.js"></script>
 </body>
 </html>
